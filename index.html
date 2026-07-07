@@ -1,23 +1,519 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio-bootstrap</title>
-    <!-- Bootstrap 5 CSS -->
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-/>
-    <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-/>
-    <script type="module" crossorigin src="/assets/index-Db49vCgR.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-q4MhN4kN.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hemant - Shopify & Frontend Web Developer. Specializing in Shopify theme customization, custom sections, app integration, responsive UI development, and performance optimization.">
+    <title>Hemant | Shopify & Frontend Web Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Background Glow Effects -->
+    <div class="bg-glows" aria-hidden="true">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo" aria-label="Hemant Portfolio Home">
+                Hemant
+            </a>
+            
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link contact-btn">Let's Talk</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="hero-badge">
+                        <svg class="badge-icon animate-pulse" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="4" cy="4" r="3.5" fill="#00f2fe" stroke="#00f2fe" stroke-opacity="0.3" stroke-width="1"/>
+                        </svg>
+                        Available for Opportunities
+                    </span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-gradient">Hemant</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Shopify &amp; <span id="typewriter">Frontend Developer</span><span class="cursor" aria-hidden="true">|</span>
+                </h2>
+                <p class="hero-description">
+                    Building premium, high-converting eCommerce stores and fluid frontend web applications. Specializing in Shopify theme custom liquid development, custom UI sections, and performance optimization.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Projects</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <span>Get Resume</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" aria-hidden="true">
+                <div class="visual-orbit">
+                    <div class="orbit-center">
+                        <svg viewBox="0 0 100 100" class="center-icon">
+                            <!-- Custom Shopify logo replacement SVG -->
+                            <path d="M79.4,32.3L56.5,7.9C54.8,6.1,51.8,5,49.4,5.4L20.8,10.2C18.4,10.6,16,12.7,15.5,15L5.7,59.3C5.2,61.6,6.4,64.8,8.2,66.4l22.9,20.4c1.7,1.5,4.7,2.3,7.1,1.9l28.6-4.8c2.4-0.4,4.8-2.5,5.3-4.8l9.8-44.3C82.4,36.2,81.1,33.1,79.4,32.3z M43,76.6c-11.3,1.9-20.9-4.8-22.9-13.8c-2-9,3.9-17.8,15.2-19.7c11.3-1.9,20.9,4.8,22.9,13.8C60.2,65.9,54.3,74.7,43,76.6z" fill="url(#shopifyGrad)" />
+                            <defs>
+                                <linearGradient id="shopifyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#00f2fe" />
+                                    <stop offset="100%" stop-color="#4facfe" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="orbit-node node-html">HTML</div>
+                    <div class="orbit-node node-css">CSS</div>
+                    <div class="orbit-node node-js">JS</div>
+                    <div class="orbit-node node-react">React</div>
+                    <div class="orbit-node node-liquid">Liquid</div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me section">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+        <!-- About & Philosophy Section -->
+        <section class="about" id="about">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Turning Pixels into Products</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-info card-glow">
+                    <h3 class="card-title">My Journey</h3>
+                    <p>
+                        I'm a Shopify &amp; Frontend Web Developer with <strong>1 year and 8 months of experience</strong> crafting fast, fully responsive, and highly interactive online shopping experiences and web tools. 
+                    </p>
+                    <p>
+                        My core focus lies in the eCommerce domain—specifically <strong>Shopify custom liquid coding, section architectures, and application integrations</strong>. I take pride in helping brands transition from standard template designs to bespoke, high-performance storefronts.
+                    </p>
+                    <p>
+                        Beyond Shopify, I'm well-versed in building front-end interfaces using modern web technologies like <strong>React, JavaScript (ES6+), Tailwind CSS</strong>, and working with tools like Git. I enjoy bridging the gap between design concepts and production-ready code.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">1.8</span>
+                            <span class="highlight-label">Years Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">4+</span>
+                            <span class="highlight-label">Major Projects Done</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">100%</span>
+                            <span class="highlight-label">Responsive UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-timeline card-glow">
+                    <h3 class="card-title">Career Objective &amp; Approach</h3>
+                    <p class="timeline-intro">
+                        To secure a Shopify Frontend Developer role where I can contribute to real-world projects, optimize user experience, and grow with a collaborative development team.
+                    </p>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Shopify Store Customization</h4>
+                                <p>Optimizing liquid file rendering, implementing app integrations, and constructing dynamic custom homepage and product page sections.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Frontend UI Engineering</h4>
+                                <p>Authoring clean, highly-accessible semantic HTML, modular CSS structures, and robust client-side ES6+ JavaScript behaviors.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Continuous Learning</h4>
+                                <p>Constantly updating skills with modern ecosystems (e.g. React.js, modern CSS tooling, web components, and optimized asset pipelines).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-header">
+                <span class="section-tag">Competencies</span>
+                <h2 class="section-title">My Tech Stack</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-container">
+                <!-- Skill Group: Shopify -->
+                <div class="skills-group card-glow">
+                    <h3 class="skills-group-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                        eCommerce &amp; CMS
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 12.33l-5.69-5.91a1.27 1.27 0 0 0-1.74-.08l-7.06 5.8a1.28 1.28 0 0 0-.16 1.83l5.58 6.22a1.28 1.28 0 0 0 1.76.08l7.06-5.8a1.28 1.28 0 0 0 .21-1.83z" fill="#96bf48"/>
+                                    <path d="M9.54 18.2L5 13.15a.51.51 0 0 1 .06-.72l5.56-4.57a.5.5 0 0 1 .69.03l4.54 5.05a.51.51 0 0 1-.06.72l-5.56 4.57a.5.5 0 0 1-.69-.03z" fill="#5e8b23"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Shopify Liquid</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="9" y1="9" x2="21" y2="9"></line><line x1="9" y1="15" x2="21" y2="15"></line></svg>
+                            </div>
+                            <span class="skill-name">Custom Sections</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            </div>
+                            <span class="skill-name">App Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Group: Frontend Core -->
+                <div class="skills-group card-glow">
+                    <h3 class="skills-group-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        Frontend Development
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1.5 22L22.5 22L24 0L0 0L1.5 22Z" fill="#E34F26" />
+                                    <path d="M12 20.35L21.15 20.35L22.37 2.12L12 2.12L12 20.35Z" fill="#F16529" />
+                                    <path d="M12 8.35L7.6 8.35L7.3 5.33L12 5.33L12 8.35ZM12 14.35L7.96 14.35L7.86 11.35L12 11.35L12 14.35ZM12 17.35L12.03 17.35L9.61 16.7L9.45 14.9L6.42 14.9L6.79 19L12 20.38L12 17.35Z" fill="#EBEBEB" />
+                                    <path d="M12 8.35L12 5.33L16.7 5.33L16.27 10.35L12.18 10.35L12.09 11.35L16.18 11.35L15.77 15.93L12 17.02L12 20.05L17.21 18.6L17.9 11.35L18.17 8.35L12 8.35Z" fill="#FFF" />
+                                </svg>
+                            </div>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1.5 22L22.5 22L24 0L0 0L1.5 22Z" fill="#1572B6" />
+                                    <path d="M12 20.35L21.15 20.35L22.37 2.12L12 2.12L12 20.35Z" fill="#33A9DC" />
+                                    <path d="M12 5.33L12 8.35L7.6 8.35L7.89 11.35L12 11.35L12 14.35L9.58 13.68L9.44 12.08L6.4 12.08L6.78 16.2L12 17.65L12 20.68L6.77 19.33L6.08 11.35L5.78 8.35L12 5.33Z" fill="#EBEBEB" />
+                                    <path d="M12 8.35L16.7 8.35L16.27 13.25L12 14.47L12 17.5L17.21 16.05L17.8 9.35L18.08 6.33L12 6.33L12 8.35Z" fill="#FFF" />
+                                </svg>
+                            </div>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M0 0h24v24H0z" fill="#F7DF1E"/>
+                                    <path d="M18.8 19.1c.3-.2.6-.5.7-.9.2-.4.3-.9.3-1.4 0-1.3-.8-2.1-2.4-2.5l-1.3-.3c-.7-.2-.9-.5-.9-.9 0-.4.3-.6.9-.6.5 0 .8.2.9.6l1.9-.8c-.3-.6-.8-1-1.4-1.2s-1.4-.3-2.1-.3c-1.3 0-2.2.4-2.8.9-.6.6-.9 1.4-.9 2.4 0 1.2.7 2 2.2 2.4l1.3.3c.9.2 1.1.5 1.1 1 0 .4-.4.7-1.1.7-.7 0-1.1-.3-1.3-.9l-1.9.9c.3.7.8 1.2 1.5 1.5.7.3 1.5.5 2.5.5 1.3 0 2.4-.4 3-1.1zm-8.2-.1c-.3.4-.6.6-1.1.6-.7 0-1.1-.5-1.1-1.4V11.2H6.2v7.1c0 1.2.3 2.1 1 2.7.7.6 1.7.9 2.9.9.9 0 1.7-.2 2.2-.6l-.7-1.8z" fill="#000"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.33 13.916c-.347.168-.693.316-1.042.44v-1.785a2.53 2.53 0 0 0 .524-.265c.348-.242.63-.58.835-.99.206-.41.31-.913.31-1.478 0-.616-.14-.145-.418-.585a2.22 2.22 0 0 0-.964-.816l1.246-2.58a5.21 5.21 0 0 1 1.79 1.636c.465.748.702 1.62.702 2.585 0 .97-.227 1.83-.673 2.548a4.832 4.832 0 0 1-1.31 1.295zM12 14.5c-.6 0-1.15-.178-1.625-.526a2.6 2.6 0 0 1-.986-1.428 5.753 5.753 0 0 1-.365-2.072c0-.756.12-1.442.365-2.033A2.66 2.66 0 0 1 10.375 7a2.768 2.768 0 0 1 1.625-.494c.594 0 1.134.168 1.614.494a2.73 2.73 0 0 1 .99 1.441c.243.59.366 1.272.366 2.033 0 .748-.123 1.445-.366 2.072a2.662 2.662 0 0 1-.99 1.428C13.134 14.322 12.594 14.5 12 14.5zM7.67 15.916a4.832 4.832 0 0 1-1.31-1.295C5.914 13.903 5.7 13.042 5.7 12.07c0-.965.237-1.837.702-2.585a5.21 5.21 0 0 1 1.79-1.636l1.246 2.58a2.22 2.22 0 0 0-.964.816c-.277.44-.418-.03-.418.585 0 .565.104 1.068.31 1.478s.487.748.835.99a2.53 2.53 0 0 0 .524.265v1.785a4.77 4.77 0 0 1-1.042-.44z" fill="#00d8ff"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">React.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M22.756 12.083c0-3.334-1.748-6.177-4.385-7.797 2.637-1.62 4.385-4.463 4.385-7.797H1.244c0 3.334 1.748 6.177 4.385 7.797-2.637 1.62-4.385 4.463-4.385 7.797H22.756z" fill="#7952b3"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Group: Version Control & Tools -->
+                <div class="skills-group card-glow">
+                    <h3 class="skills-group-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="title-icon"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        Workflow &amp; Backend
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.73 5.57l-7.44-4.29a1.68 1.68 0 0 0-1.68 0L4.17 5.57A1.66 1.66 0 0 0 3.33 7v8.58a1.66 1.66 0 0 0 .84 1.43l7.44 4.29a1.68 1.68 0 0 0 1.68 0l7.44-4.29a1.66 1.66 0 0 0 .84-1.43V7a1.66 1.66 0 0 0-.84-1.43zm-8.23 13.91l-6.6-3.81V8.09l6.6 3.81zm.82-8.54L6.72 7.13l6.6-3.81 6.6 3.81zm6.6 6.37l-6.6 3.81V11.9l6.6-3.81" fill="#FF2D20"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="section-header">
+                <span class="section-tag">Showcase</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card card-glow" data-project="1">
+                    <div class="project-visual bg-mesh-1">
+                        <div class="project-overlay">
+                            <span class="project-tag">Shopify</span>
+                        </div>
+                        <img src="assets/bagabu.png" alt="Bagabu eCommerce website screenshot" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bagabu eCommerce</h3>
+                        <p class="project-description">
+                            Customized multiple storefront pages for this fashion eCommerce brand on Shopify. Developed custom UI components and theme modifications on behalf of Shade Agency.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Shopify Liquid</span>
+                            <span class="tech-badge">CSS Variables</span>
+                            <span class="tech-badge">Vanilla JS</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                Completed
+                            </span>
+                            <a href="https://bagabu.co.in/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Visit Bagabu site">
+                                <span>Visit Site</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card card-glow" data-project="2">
+                    <div class="project-visual bg-mesh-2">
+                        <div class="project-overlay">
+                            <span class="project-tag">Shopify</span>
+                        </div>
+                        <img src="assets/ohmybebe.png" alt="Oh My Bebe eCommerce website screenshot" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Oh My Bebe eCommerce</h3>
+                        <p class="project-description">
+                            Developed custom sections, theme structures, and app integrations for this organic baby clothing Shopify store on behalf of Shade Agency.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Shopify Liquid</span>
+                            <span class="tech-badge">Custom CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                Active
+                            </span>
+                            <a href="https://ohmybebe.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Visit Oh My Bebe site">
+                                <span>Visit Site</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card card-glow" data-project="3">
+                    <div class="project-visual bg-mesh-3">
+                        <div class="project-overlay">
+                            <span class="project-tag">Design Agency</span>
+                        </div>
+                        <img src="assets/shade.png" alt="Shade Agency website screenshot" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Shade Agency Website</h3>
+                        <p class="project-description">
+                            Designed and developed the official agency website for Shade Agency, my own creative web agency. Built with a responsive layout, clean typography, and interactive frontend elements.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS Variables</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Responsive UI</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                Creative Agency
+                            </span>
+                            <a href="https://shade.agency/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Visit Shade Agency site">
+                                <span>Visit Site</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card card-glow" data-project="4">
+                    <div class="project-visual bg-mesh-4">
+                        <div class="project-overlay">
+                            <span class="project-tag">Laravel</span>
+                        </div>
+                        <img src="assets/bluespace.png" alt="Blue Space Innovations website screenshot" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Blue Space Innovations</h3>
+                        <p class="project-description">
+                            Developed by Shade Agency for an electronics components client. Contributed to the entire frontend interface design and engineered custom component controllers within Laravel's MVC structure.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">Bootstrap</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                Laravel Application
+                            </span>
+                            <a href="http://bluespaceinnovations.in/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Visit Blue Space Innovations site">
+                                <span>Visit Site</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Start a Conversation</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-details">
+                    <h3 class="contact-heading">Got a project? Let's discuss.</h3>
+                    <p class="contact-sub">
+                        I am always open to exploring Shopify Frontend roles, full-time contracts, and collaborative web design projects. Drop a line, and let's bring your ideas to life.
+                    </p>
+                    
+                    <div class="contact-info-list">
+                        <a href="mailto:himanshudhoundiyal2406@gmail.com" class="info-card card-glow" aria-label="Send Email to Hemant">
+                            <div class="info-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="info-content">
+                                <span class="info-label">Email Me</span>
+                                <span class="info-value">himanshudhoundiyal2406@gmail.com</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/hemant-dhoundiyal-413041389/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container card-glow">
+                    <form class="contact-form" id="portfolio-contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" required placeholder="e.g. John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Your Email</label>
+                                <input type="email" id="form-email" required placeholder="e.g. john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" required placeholder="e.g. Shopify Project Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" required rows="6" placeholder="Describe your project, goals, or role timeline..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Hemant. All rights reserved.</p>
+            <p class="footer-text">Designed &amp; Built with Passion</p>
+        </div>
+    </footer>
+
+    <!-- Form Response Custom Dialog -->
+    <dialog id="success-dialog" class="dialog">
+        <div class="dialog-content card-glow">
+            <div class="dialog-icon-container">
+                <svg class="success-check" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out, Hemant will get back to you shortly.</p>
+            <button id="close-dialog" class="btn btn-primary">Close</button>
+        </div>
+    </dialog>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
 </html>
